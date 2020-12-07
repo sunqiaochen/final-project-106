@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8"> -->
+    <meta charset="UTF-8" >
+    <title>DSC106-final</title>
+    <script type="text/javascript" src = 'final.js'></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="https://code.highcharts.com/highcharts-3d.js"></script>
+    <script src="https://code.highcharts.com/modules/cylinder.js"></script>
+    <script src="https://code.highcharts.com/modules/funnel3d.js"></script>
+    <script src="https://code.highcharts.com/modules/pyramid3d.js"></script>
+    <script type="text/javascript" src = '2015.js'></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/timeline.js"></script>
+
+    <link href="final.css" rel="stylesheet" type = "text/css">
+
+</head>
+<body>
+
+    <video autoplay muted loop id="myVideo">
+        <source src="//videos.ctfassets.net/ov0s3ckmh46b/3WaOdSLVgwPLV6o2qzbEE3/1940e209f5dbe6ff1c1fe6bcfe69b6a6/home-cover-video-480.mov" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <!-- <div class="">
+        <h1>Heading</h1>
+        <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore latine molestiae, ad mutat oblique delicatissimi pro.</p>
+    </div> -->
+
+
+    <div class = "content">
+        <div class = "bottom-lefts">World Happiness index</div>
+        <div id = 'text'  class = "bottom-rights">Asia   &nbsp;&nbsp;&nbsp;&nbsp;America &nbsp;&nbsp;&nbsp;&nbsp; Africa &nbsp;&nbsp;&nbsp;&nbsp; Europe</div>
+        <!-- <div class="top-right">Top Right</div> -->
+        <div class="centered"><b>Do You Feel Happy?</b></div>
+        <div class = "center">In this project, I will research on world happiness index and make some conclusions based on given dataset</div>
+        
+        
+       
+    </div>
+
+
+    <img src = "12.jpg" width="100%">
+        <div class = 'great'>
+        <div class = cent> <b>TEST FOR YOU!</b> </div>
+        <div class = 'cen'>If you feel happy, choose Very Happy. Otherwise, choose Not Happy</div>
+        <div id = 'demo' class = "bottom-left"></div>
+        <a onclick = "myFunction()" class="btn orange">Very Happy</a>
+        <img class="bottom-right" id="bigpic" src="71TkqUx-X8L.jpg" width = "200" height = "200" style="display:none;"/>
+        <img class ="botto" id = 'o' src = "Happy 1-1579144821.jpg" width = "400" height = "200" style="display:none;"/>
+        <img class ="bott" id = 's' src = "currency-of-happiness.jpg" width = "400" height = "200" style="display:none;"/>
+        
+        <script>function myFunction() {
+            document.getElementById("demo").innerHTML = "Nice! I hope you feel happy every day and in the rest of your lifes!";
+        }</script>
+            
+        <a onclick = "mySfunction()" class="btn purple">Not Happy</a>
+        <script> function mySfunction() {
+            document.getElementById("demo").innerHTML = "No matter how life is, we still have to face it with a smile. Go for it!";
+            document.getElementById('bigpic').style.display ='block';
+            document.getElementById('o').style.display ='block';
+            document.getElementById('s').style.display ='block';
+            }
+        </script>      
+    </div>
+
+
+    <div class = "timelines">
+        <img src = "6ac79a8ab82fd5f256de9eee293570c.jpg" width="1260" height="200">
+        <div class = "siderbar">The development of the research on world happiness index</div>
+        <div class = "timelinetext"></div>
+        <div id="container-time"></div>
+        <script>timeplot();</script>
+    </div>
+
+    <div class = 'sss'></div>
+    <hr>
+
+
+    <div class = "">
+        <img src = "frame.jpg">
+        <div class = "changes"></div>
+        <div class = 'change'>Choose one year you like please</div>
+
+    </div>
+    <div class = "b" id = 'divider' style="height: 400px"></div>
+    <script>plot_divider();</script>
+    <div class = "div">I have researched on two things below.</div>
+    <div class = "div1"> 1. The spider chart to show the proportion of each aspects that count for happiness index</div>
+    <div class = 'div2'>2. The 3D pyramid chart to compare the happiness index of different continents</div>
+    
+    <hr>
+    <img src = "frame.jpg" width="1260" height="200">
+    <div class = 'pp'></div>
+    <div class = "grid-container2">
+        <div id = "spider1"></div>
+        <div id="container"></div>
+    </div>
+    <div class = 'ooo'></div>
+    <hr>
+
+
+    
+    <img src = 'frame.jpg' width="1260" height="200">
+    <p class = 'ui'>The happiness index of all continents in the world is increasing</p>
+    <p class = 'ui2'>We could find that more or less the happiness index of different continents are all increasing and the increasing of Asia is obvious.</p>
+    <div>
+        <div id = "bars"> </div>
+        <script> barplot();</script>  
+    </div>
+    <div class = 'lll'></div>
+    
+
+</body>
+</html>  
